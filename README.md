@@ -17,10 +17,11 @@ Aplikacija će biti jednostavna za korištenje, ali vrlo učinkovita u praćenju
     FZ-3 - Sustav će omogućiti kategorizacija troškova.
     FZ-4 - Sustav će omogućiti filtriranje troškova.
     FZ-5 - Sustav će omogućiti uvoz podataka.
-    FZ-6 - Sustav će imati mogućnost brisanja troškova
-    FZ-7 - Sustav će imati funkcionalnost izračuna ukupnog iznosa potrošenog po vrsti troška
-    FZ-9 - Sustav će imati mogućnost izračuna predviđanja s obzirom na prosječnu dnevnu potrošnju
-    FZ-10 - Sustav će izraditi izvještaj sa popisom svih troškova
+    FZ-6 - Sustav će imati mogućnost brisanja troškova.
+    FZ-7 - Sustav će imati funkcionalnost izračuna ukupnog iznosa potrošenog po vrsti troška.
+    FZ-8 - Sustav će omogućiti unos mjesečne plaće.
+    FZ-9 - Sustav će imati mogućnost izračuna predviđanja s obzirom na prosječnu dnevnu potrošnju.
+    FZ-10 - Sustav će izraditi izvještaj sa popisom svih troškova.
 
 
 ## Zadatak
