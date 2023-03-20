@@ -12,17 +12,26 @@ Aplikacija će biti jednostavna za korištenje, ali vrlo učinkovita u praćenju
 
 ## Specifikacija projekta
 
-    FZ-1 - Sustav će omogućiti pristup samo ovlaštenim korisnicima.
-    FZ-2 - Sustav će omogućiti korisnicima unos troškova.
-    FZ-3 - Sustav će omogućiti kategorizacija troškova.
-    FZ-4 - Sustav će omogućiti filtriranje troškova.
-    FZ-5 - Sustav će omogućiti uvoz podataka.
-    FZ-6 - Sustav će imati mogućnost brisanja troškova.
-    FZ-7 - Sustav će imati funkcionalnost izračuna ukupnog iznosa potrošenog po vrsti troška.
-    FZ-8 - Sustav će omogućiti unos mjesečne plaće.
-    FZ-9 - Sustav će imati mogućnost izračuna predviđanja s obzirom na prosječnu dnevnu potrošnju.
-    FZ-10 - Sustav će izraditi izvještaj sa popisom svih troškova.
-
+FZ-1 - Sustav će omogućiti pristup samo ovlaštenim korisnicima.
+FZ-2 - Sustav će omogućiti korisnicima unos troškova.
+FZ-3 - Sustav će omogućiti kategorizacija troškova.
+FZ-4 - Sustav će omogućiti filtriranje troškova.
+FZ-5 - Sustav će omogućiti uvoz podataka.
+FZ-6 - Sustav će imati mogućnost brisanja troškova.
+FZ-7 - Sustav će imati funkcionalnost izračuna ukupnog iznosa potrošenog po vrsti troška.
+FZ-8 - Sustav će omogućiti unos mjesečne plaće.
+FZ-9 - Sustav će imati mogućnost izračuna predviđanja s obzirom na prosječnu dnevnu potrošnju.
+FZ-10 - Sustav će izraditi izvještaj sa popisom svih troškova.
+    
+NFZ-1 – Sustav će interakciju s korisnikom provoditi preko grafičkog sučelja.
+NFZ-2 – Sustav će pratiti formalan/korporativni stil grafičkog sučelja
+NFZ-3 – Sustav će ponuditi mehanizme koji će smanjiti mogućnost grešaka prilikom unosa troškova i kod unosa vrsta troškova
+NFZ-4– Sustav će osigurati preciznost za decimalne brojeve na razini 2 decimalna mjesta.
+NFZ-5 – Sustav će biti dostupan 24 sata na dan 365 dana u godini.
+NFZ-6 – Sustav će osigurati da su svi iznosi prikazani u valuti euri-€.
+NFZ-7 – Sustav treba raditi na računalima s instaliranim Windows 10 ili novijim operacijskim sustavom.
+NFZ-8 – Sustav će samo korisnici (naručitelju) omogućiti pristup rezultatima aplikacije.
+NFZ-9 – Sustav će upotrebljavati podatke o korisicni u skladu sa odredbama GDPR-a
 
 ## Zadatak
 https://github.com/foivz/pi2023-zadace-vvugrinec21/wiki
