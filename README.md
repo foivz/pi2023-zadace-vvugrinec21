@@ -31,6 +31,12 @@ FZ-8 - Sustav će omogućiti unos mjesečne plaće.
 FZ-9 - Sustav će imati mogućnost izračuna predviđanja s obzirom na prosječnu dnevnu potrošnju.
 
 FZ-10 - Sustav će izraditi izvještaj sa popisom svih troškova.
+
+FZ-11 - Sustav će imat mogućnost isključivanja zaštite/prijave u sustav.
+
+FZ-12 - Sustav će imat mogućnost dodavnja mjesečnih aktivnosti(podkategorije).
+
+FZ-13 - Sustav će imat mogućnost brisanja mjesečnih aktivnosti(podkategorije).
     
 NFZ-1 – Sustav će interakciju s korisnikom provoditi preko grafičkog sučelja.
 
