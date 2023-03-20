@@ -1,5 +1,4 @@
 # Alat za praćenje osobnih financija
-(U redak iznad navedite naziv projekta koji ste dobili za analizu!)
 
 ## Podaci o studentu
 
