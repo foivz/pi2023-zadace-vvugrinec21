@@ -14,7 +14,7 @@ Aplikacija će biti jednostavna za korištenje, ali vrlo učinkovita u praćenju
 (Vlastitim riječima opišite zahtjeve za izradu ovog programskog proizvoda!)
 
 ## Zadatak
-(U root repozitorija učitajte zadatak koji ste dobili i potom ovdje stavite link na njegovo otvaranje!)
+https://github.com/foivz/pi2023-zadace-vvugrinec21/wiki
 
 ## Resursi
 
