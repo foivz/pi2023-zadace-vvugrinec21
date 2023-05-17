@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletWatch", "WalletWatch\WalletWatch.csproj", "{15344378-80AB-4BD7-B2F6-544266EDFBA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15344378-80AB-4BD7-B2F6-544266EDFBA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15344378-80AB-4BD7-B2F6-544266EDFBA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15344378-80AB-4BD7-B2F6-544266EDFBA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15344378-80AB-4BD7-B2F6-544266EDFBA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E8CD823-F56D-4975-A8EE-12610C8D8734}
+	EndGlobalSection
+EndGlobal
