@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WalletWatch
 {
-    public partial class Form1 : Form
+    public partial class FrmTroskovi : Form
     {
-        public Form1()
+        public FrmTroskovi()
         {
             InitializeComponent();
         }
