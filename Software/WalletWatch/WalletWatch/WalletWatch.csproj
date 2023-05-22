@@ -56,12 +56,23 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTroskovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTroskovi.Designer.cs">
+      <DependentUpon>FrmTroskovi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Korisnica.cs" />
+    <Compile Include="Models\Trosak.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\KorisnicaRepository.cs" />
+    <Compile Include="Repositories\TroskoviRepository.cs" />
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTroskovi.resx">
+      <DependentUpon>FrmTroskovi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

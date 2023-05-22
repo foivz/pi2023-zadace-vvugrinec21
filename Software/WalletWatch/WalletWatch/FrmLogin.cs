@@ -24,6 +24,11 @@ namespace WalletWatch
             if (txtPassword.Text == password) {
                 MessageBox.Show("Uspješno ste se logirali", "Prijvaljeni ste", MessageBoxButtons.OK,
                MessageBoxIcon.Information);
+                
+                FrmTroskovi frmTroskovi = new FrmTroskovi();
+                Hide();
+                frmTroskovi.ShowDialog();
+                Close();
 
             }
             else

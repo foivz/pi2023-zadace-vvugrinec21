@@ -28,11 +28,11 @@ namespace WalletWatch.Repositories
             DB.CloseConnection();
             return trosak;
         }
-        public static List<Trosak> GetTrosaks(int id)
+        public static List<Trosak> GetTroskovi()
         {
             List<Trosak> troskovi = new List<Trosak>();
 
-            string sql = "SELECT * FROM Troskovi";
+            string sql = $"SELECT * FROM Troskovi,VrsteTroskova WHERE VrsteTroskova.ID_naziva = Troskovi.ID_naziva";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             while (reader.Read())
@@ -52,8 +52,9 @@ namespace WalletWatch.Repositories
             int iznos = int.Parse(reader["iznos_troska"].ToString());
             string opis = reader["opis"].ToString();
             DateTime datumTroska = DateTime.Parse(reader["datum_troska"].ToString());
+            string VrstaTroska = reader["naziv_vrste"].ToString() ;
 
-            Trosak trosak = new Trosak(id,iznos,opis,datumTroska);
+            Trosak trosak = new Trosak(id,iznos,opis,datumTroska,VrstaTroska);
 
             return trosak;
         }   

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WalletWatch.Models;
+using WalletWatch.Repositories;
 
 namespace WalletWatch
 {
@@ -15,6 +17,17 @@ namespace WalletWatch
         public FrmTroskovi()
         {
             InitializeComponent();
+        }
+
+        private void FrmTroskovi_Load(object sender, EventArgs e)
+        {
+            ShowTroskovi();
+        }
+        private void ShowTroskovi()
+        {
+            List<Trosak> troskovi = TroskoviRepository.GetTroskovi();
+            dgvTroskovi.DataSource = troskovi;
+
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DBLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace WalletWatch
         [STAThread]
         static void Main()
         {
+            DB.SetConfiguration("IPS23_vvugrinec21", "vvugrinec21", "]7yB5pry");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmLogin());
