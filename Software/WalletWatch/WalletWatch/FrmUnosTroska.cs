@@ -50,5 +50,6 @@ namespace WalletWatch
         {
            // int idNaziva = Convert.ToInt32(cboVrste.SelectedValue);
         }
+
     }
 }
