@@ -38,6 +38,8 @@
             this.dgvTroskovi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvTroskovi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvTroskovi.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvTroskovi.BackgroundColor = System.Drawing.Color.White;
             this.dgvTroskovi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTroskovi.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -65,6 +67,7 @@
             this.Controls.Add(this.btnUnesiNovi);
             this.Controls.Add(this.dgvTroskovi);
             this.Name = "FrmTroskovi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTroskovi";
             this.Load += new System.EventHandler(this.FrmTroskovi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTroskovi)).EndInit();

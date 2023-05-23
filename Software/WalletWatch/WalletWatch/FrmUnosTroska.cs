@@ -48,7 +48,6 @@ namespace WalletWatch
 
         private void cboVrste_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
            // int idNaziva = Convert.ToInt32(cboVrste.SelectedValue);
         }
     }

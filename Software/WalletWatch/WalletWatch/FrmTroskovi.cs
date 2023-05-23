@@ -33,8 +33,12 @@ namespace WalletWatch
         private void btnUnesiNovi_Click(object sender, EventArgs e)
         {
             FrmUnosTroska frmUnosTroska = new FrmUnosTroska();
+            frmUnosTroska.FormClosed += FrmUnosTroska_FormClosed;
             frmUnosTroska.ShowDialog();
-            dgvTroskovi.Refresh();
+        }
+        private void FrmUnosTroska_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ShowTroskovi();
         }
     }
 }

@@ -52,10 +52,11 @@ namespace WalletWatch.Repositories
             int iznos = int.Parse(reader["iznos_troska"].ToString());
             string opis = reader["opis"].ToString();
             DateTime datumTroska = DateTime.Parse(reader["datum_troska"].ToString());
-            string VrstaTroska = reader["naziv_vrste"].ToString();
-            string Kategorije = reader["naziv_kategorije"].ToString();
+            int idVrste = int.Parse(reader["ID_naziva"].ToString());
+            string nazivVrste = reader["naziv_vrste"].ToString();
+            string kategorije = reader["naziv_kategorije"].ToString();
 
-            Trosak trosak = new Trosak(id, iznos, opis, datumTroska, VrstaTroska, Kategorije);
+            Trosak trosak = new Trosak(id, iznos , opis, datumTroska, idVrste, nazivVrste, kategorije);
 
             return trosak;
         }

@@ -103,6 +103,7 @@
             // 
             // txtKategorije
             // 
+            this.txtKategorije.Enabled = false;
             this.txtKategorije.Location = new System.Drawing.Point(208, 334);
             this.txtKategorije.Name = "txtKategorije";
             this.txtKategorije.ReadOnly = true;
@@ -113,7 +114,7 @@
             // 
             this.btnUnos.Location = new System.Drawing.Point(448, 334);
             this.btnUnos.Name = "btnUnos";
-            this.btnUnos.Size = new System.Drawing.Size(99, 29);
+            this.btnUnos.Size = new System.Drawing.Size(127, 50);
             this.btnUnos.TabIndex = 10;
             this.btnUnos.Text = "Unesi";
             this.btnUnos.UseVisualStyleBackColor = true;

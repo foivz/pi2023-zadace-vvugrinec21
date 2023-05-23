@@ -13,10 +13,11 @@ namespace WalletWatch.Models
         public int Iznos { get; set; }
         public string Opis { get; set; }   
         public DateTime DatumTroska { get; set; }
+        public int IdVrste { get; set; }
         public string VrstaTroska { get; set; }
-        public int IdVrste{ get; set; } 
+        
         public string Katgorije { get; set; }
-        public Trosak(int id, int iznos, string opis, DateTime datumTroska, string vrstaTroska, string katgorije)
+        public Trosak(int id, int iznos, string opis, DateTime datumTroska, int idVrste,  string vrstaTroska, string katgorije)
         {
             Id = id;
             Iznos = iznos;
@@ -24,6 +25,7 @@ namespace WalletWatch.Models
             DatumTroska = datumTroska;
             VrstaTroska = vrstaTroska;
             Katgorije = katgorije;
+            IdVrste = idVrste;
         }
         public Trosak() { }
     }
