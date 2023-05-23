@@ -40,5 +40,22 @@ namespace WalletWatch
         {
             ShowTroskovi();
         }
+
+        private void dgvTroskovi_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                dgvTroskovi.Rows[e.RowIndex].Selected = true;
+            }
+        }
+        private void btnObrisi_Click(object sender, EventArgs e)
+        {
+            if (dgvTroskovi.SelectedRows.Count > 0)
+            {
+                int trosakId = Convert.ToInt32(dgvTroskovi.SelectedRows[0].Cells["Id"].Value);
+                TroskoviRepository.DeleteTrosak(trosakId);
+                ShowTroskovi();
+            }
+        }
     }
 }

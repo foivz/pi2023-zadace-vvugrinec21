@@ -88,7 +88,13 @@ namespace WalletWatch.Repositories
             return vrsteDictionary;
         }
 
-
+        public static void DeleteTrosak(int id)
+        {
+            string sql = $"DELETE FROM Troskovi WHERE ID_troska = {id}";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
 
 
     }

@@ -30,6 +30,7 @@
         {
             this.dgvTroskovi = new System.Windows.Forms.DataGridView();
             this.btnUnesiNovi = new System.Windows.Forms.Button();
+            this.btnObrisi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTroskovi)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,13 +51,23 @@
             // 
             // btnUnesiNovi
             // 
-            this.btnUnesiNovi.Location = new System.Drawing.Point(713, 430);
+            this.btnUnesiNovi.Location = new System.Drawing.Point(564, 430);
             this.btnUnesiNovi.Name = "btnUnesiNovi";
-            this.btnUnesiNovi.Size = new System.Drawing.Size(122, 41);
+            this.btnUnesiNovi.Size = new System.Drawing.Size(122, 42);
             this.btnUnesiNovi.TabIndex = 1;
             this.btnUnesiNovi.Text = "Unesi novi trosak";
             this.btnUnesiNovi.UseVisualStyleBackColor = true;
             this.btnUnesiNovi.Click += new System.EventHandler(this.btnUnesiNovi_Click);
+            // 
+            // btnObrisi
+            // 
+            this.btnObrisi.Location = new System.Drawing.Point(692, 430);
+            this.btnObrisi.Name = "btnObrisi";
+            this.btnObrisi.Size = new System.Drawing.Size(122, 42);
+            this.btnObrisi.TabIndex = 2;
+            this.btnObrisi.Text = "Obrisi trosak";
+            this.btnObrisi.UseVisualStyleBackColor = true;
+            this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
             // FrmTroskovi
             // 
@@ -64,6 +75,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(941, 514);
+            this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.btnUnesiNovi);
             this.Controls.Add(this.dgvTroskovi);
             this.Name = "FrmTroskovi";
@@ -79,5 +91,6 @@
 
         private System.Windows.Forms.DataGridView dgvTroskovi;
         private System.Windows.Forms.Button btnUnesiNovi;
+        private System.Windows.Forms.Button btnObrisi;
     }
 }
