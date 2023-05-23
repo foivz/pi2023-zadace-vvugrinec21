@@ -28,6 +28,11 @@ namespace WalletWatch
             List<Trosak> troskovi = TroskoviRepository.GetTroskovi();
             dgvTroskovi.DataSource = troskovi;
 
+            dgvTroskovi.Columns["Id"].HeaderText = "Identifikacijski broj troška";
+            dgvTroskovi.Columns["DatumTroska"].HeaderText = "Datum troška";
+            dgvTroskovi.Columns["IdVrste"].HeaderText = "Identifikiacijski broj vrste troska";
+            dgvTroskovi.Columns["VrstaTroska"].HeaderText = "Vrsta troška";
+            dgvTroskovi.Columns["Katgorije"].HeaderText = "Kategorija";
         }
 
         private void btnUnesiNovi_Click(object sender, EventArgs e)
@@ -74,7 +79,13 @@ namespace WalletWatch
             List<Trosak> filtriraniTroskovi = troskovi.Where(trosak =>
                 trosak.Iznos.ToString().IndexOf(kljucnaRijec, StringComparison.OrdinalIgnoreCase) >= 0 ||
                 trosak.Opis.IndexOf(kljucnaRijec, StringComparison.OrdinalIgnoreCase) >= 0 ||
-                trosak.DatumTroska.ToString().IndexOf(kljucnaRijec, StringComparison.OrdinalIgnoreCase) >= 0
+                trosak.DatumTroska.ToString().IndexOf(kljucnaRijec, StringComparison.OrdinalIgnoreCase) >= 0 ||
+                trosak.Katgorije.IndexOf(kljucnaRijec, StringComparison.OrdinalIgnoreCase) >= 0 ||
+                trosak.VrstaTroska.IndexOf(kljucnaRijec, StringComparison.OrdinalIgnoreCase) >= 0 ||
+                trosak.Id.ToString().IndexOf(kljucnaRijec, StringComparison.OrdinalIgnoreCase) >= 0 ||
+                trosak.IdVrste.ToString().IndexOf(kljucnaRijec, StringComparison.OrdinalIgnoreCase) >= 0 
+
+
 
             ).ToList();
 

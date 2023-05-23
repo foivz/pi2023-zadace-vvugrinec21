@@ -26,6 +26,7 @@ namespace WalletWatch
             DateTime datumTroska = dtpDatumTroska.Value;
             int idNaziva = Convert.ToInt32(cboVrste.SelectedValue);
 
+
             Trosak trosak = new Trosak();
             trosak.Iznos = iznosTroska;
             trosak.Opis = opis;
@@ -33,6 +34,7 @@ namespace WalletWatch
             trosak.IdVrste = idNaziva;
 
             TroskoviRepository.InsertTrosak(trosak);
+
 
             MessageBox.Show("Trosak je uspješno dodan.");
         }
@@ -48,7 +50,10 @@ namespace WalletWatch
 
         private void cboVrste_SelectedIndexChanged(object sender, EventArgs e)
         {
-           // int idNaziva = Convert.ToInt32(cboVrste.SelectedValue);
+            // int idNaziva = Convert.ToInt32(cboVrste.SelectedValue);
+
+            
+         
         }
 
     }

@@ -105,7 +105,5 @@ namespace WalletWatch.Repositories
             DB.CloseConnection();
         }
 
-
-
     }
 }

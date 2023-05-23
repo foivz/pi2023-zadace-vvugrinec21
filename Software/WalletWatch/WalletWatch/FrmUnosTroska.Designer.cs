@@ -32,10 +32,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtOpis = new System.Windows.Forms.TextBox();
             this.txtIznos = new System.Windows.Forms.TextBox();
-            this.txtKategorije = new System.Windows.Forms.TextBox();
             this.btnUnos = new System.Windows.Forms.Button();
             this.dtpDatumTroska = new System.Windows.Forms.DateTimePicker();
             this.cboVrste = new System.Windows.Forms.ComboBox();
@@ -78,15 +76,6 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Vrsta troska:";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(86, 367);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Kategorija troska:";
-            // 
             // txtOpis
             // 
             this.txtOpis.Location = new System.Drawing.Point(198, 100);
@@ -102,18 +91,9 @@
             this.txtIznos.Size = new System.Drawing.Size(177, 20);
             this.txtIznos.TabIndex = 7;
             // 
-            // txtKategorije
-            // 
-            this.txtKategorije.Enabled = false;
-            this.txtKategorije.Location = new System.Drawing.Point(198, 364);
-            this.txtKategorije.Name = "txtKategorije";
-            this.txtKategorije.ReadOnly = true;
-            this.txtKategorije.Size = new System.Drawing.Size(177, 20);
-            this.txtKategorije.TabIndex = 9;
-            // 
             // btnUnos
             // 
-            this.btnUnos.Location = new System.Drawing.Point(433, 334);
+            this.btnUnos.Location = new System.Drawing.Point(435, 280);
             this.btnUnos.Name = "btnUnos";
             this.btnUnos.Size = new System.Drawing.Size(127, 50);
             this.btnUnos.TabIndex = 10;
@@ -156,11 +136,9 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dtpDatumTroska);
             this.Controls.Add(this.btnUnos);
-            this.Controls.Add(this.txtKategorije);
             this.Controls.Add(this.txtIznos);
             this.Controls.Add(this.txtOpis);
             this.Controls.Add(this.cboVrste);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -179,10 +157,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtOpis;
         private System.Windows.Forms.TextBox txtIznos;
-        private System.Windows.Forms.TextBox txtKategorije;
         private System.Windows.Forms.Button btnUnos;
         private System.Windows.Forms.DateTimePicker dtpDatumTroska;
         private System.Windows.Forms.ComboBox cboVrste;

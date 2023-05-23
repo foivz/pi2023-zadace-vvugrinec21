@@ -50,6 +50,7 @@
             this.dgvTroskovi.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvTroskovi.Location = new System.Drawing.Point(21, 24);
             this.dgvTroskovi.Name = "dgvTroskovi";
+            this.dgvTroskovi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTroskovi.Size = new System.Drawing.Size(793, 381);
             this.dgvTroskovi.TabIndex = 0;
             // 
