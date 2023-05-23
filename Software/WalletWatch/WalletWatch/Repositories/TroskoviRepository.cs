@@ -39,7 +39,7 @@ namespace WalletWatch.Repositories
             {
                 Trosak trosak = CreateObject(reader);
                 troskovi.Add(trosak);
-            }
+            } 
             reader.Close();
             DB.CloseConnection();
 
@@ -47,7 +47,7 @@ namespace WalletWatch.Repositories
         }
         private static Trosak CreateObject(SqlDataReader reader)
         {
-            
+
             int id = int.Parse(reader["ID_troska"].ToString());
             int iznos = int.Parse(reader["iznos_troska"].ToString());
             string opis = reader["opis"].ToString();
@@ -55,10 +55,39 @@ namespace WalletWatch.Repositories
             string VrstaTroska = reader["naziv_vrste"].ToString();
             string Kategorije = reader["naziv_kategorije"].ToString();
 
-            Trosak trosak = new Trosak(id,iznos,opis,datumTroska,VrstaTroska,Kategorije);
+            Trosak trosak = new Trosak(id, iznos, opis, datumTroska, VrstaTroska, Kategorije);
 
             return trosak;
-        }   
+        }
+
+        public static void InsertTrosak(Trosak trosak)
+        {
+            string sql = $"INSERT INTO Troskovi (iznos_troska, opis, datum_troska, ID_korisnice,ID_naziva) VALUES( '{trosak.Iznos}','{trosak.Opis}','{trosak.DatumTroska.ToString("yyyy-MM-dd HH:mm:ss")}',1,'{trosak.IdVrste}')";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+
+        public static Dictionary<int, string> GetNaziviVrsta()
+        {
+            Dictionary<int, string> vrsteDictionary = new Dictionary<int, string>();
+
+            string sql = "SELECT ID_naziva, naziv_vrste FROM VrsteTroskova";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                int id = int.Parse(reader["ID_naziva"].ToString());
+                string nazivVrste = reader["naziv_vrste"].ToString();
+                vrsteDictionary.Add(id, nazivVrste);
+            }
+            reader.Close();
+            DB.CloseConnection();
+
+            return vrsteDictionary;
+        }
+
+
 
 
     }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.dgvTroskovi = new System.Windows.Forms.DataGridView();
+            this.btnUnesiNovi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTroskovi)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,8 +43,18 @@
             this.dgvTroskovi.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvTroskovi.Location = new System.Drawing.Point(21, 24);
             this.dgvTroskovi.Name = "dgvTroskovi";
-            this.dgvTroskovi.Size = new System.Drawing.Size(558, 381);
+            this.dgvTroskovi.Size = new System.Drawing.Size(793, 381);
             this.dgvTroskovi.TabIndex = 0;
+            // 
+            // btnUnesiNovi
+            // 
+            this.btnUnesiNovi.Location = new System.Drawing.Point(713, 430);
+            this.btnUnesiNovi.Name = "btnUnesiNovi";
+            this.btnUnesiNovi.Size = new System.Drawing.Size(122, 41);
+            this.btnUnesiNovi.TabIndex = 1;
+            this.btnUnesiNovi.Text = "Unesi novi trosak";
+            this.btnUnesiNovi.UseVisualStyleBackColor = true;
+            this.btnUnesiNovi.Click += new System.EventHandler(this.btnUnesiNovi_Click);
             // 
             // FrmTroskovi
             // 
@@ -51,6 +62,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(941, 514);
+            this.Controls.Add(this.btnUnesiNovi);
             this.Controls.Add(this.dgvTroskovi);
             this.Name = "FrmTroskovi";
             this.Text = "FrmTroskovi";
@@ -63,5 +75,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvTroskovi;
+        private System.Windows.Forms.Button btnUnesiNovi;
     }
 }

@@ -70,6 +70,7 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.lblPassword);
             this.Name = "FrmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLogin";
             this.ResumeLayout(false);
             this.PerformLayout();

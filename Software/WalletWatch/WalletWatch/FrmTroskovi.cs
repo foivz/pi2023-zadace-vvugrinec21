@@ -29,5 +29,12 @@ namespace WalletWatch
             dgvTroskovi.DataSource = troskovi;
 
         }
+
+        private void btnUnesiNovi_Click(object sender, EventArgs e)
+        {
+            FrmUnosTroska frmUnosTroska = new FrmUnosTroska();
+            frmUnosTroska.ShowDialog();
+            dgvTroskovi.Refresh();
+        }
     }
 }
