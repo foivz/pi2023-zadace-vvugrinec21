@@ -68,6 +68,12 @@
     <Compile Include="FrmUnosTroska.Designer.cs">
       <DependentUpon>FrmUnosTroska.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmUpdateData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateData.Designer.cs">
+      <DependentUpon>FrmUpdateData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Korisnica.cs" />
     <Compile Include="Models\Trosak.cs" />
     <Compile Include="Program.cs" />
@@ -82,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUnosTroska.resx">
       <DependentUpon>FrmUnosTroska.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateData.resx">
+      <DependentUpon>FrmUpdateData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

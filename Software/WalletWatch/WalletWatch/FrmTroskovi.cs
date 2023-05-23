@@ -85,9 +85,24 @@ namespace WalletWatch
                 dgvTroskovi.Rows[trenutnaPozicija].Selected = true;
             }
         }
+        
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (dgvTroskovi.SelectedRows.Count > 0)
+            {
+                
+                Trosak selectedTrosak = dgvTroskovi.SelectedRows[0].DataBoundItem as Trosak;
 
+                FrmUpdateData frmUpdateData= new FrmUpdateData(selectedTrosak);
 
-
-
+                frmUpdateData.FormClosed += FrmUpdateData_FormClosed;
+              
+                frmUpdateData.ShowDialog();
+            }
+        }
+        private void FrmUpdateData_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ShowTroskovi();
+        }
     }
 }

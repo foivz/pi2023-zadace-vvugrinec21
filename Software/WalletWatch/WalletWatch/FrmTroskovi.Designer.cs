@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtPretrazivanje = new System.Windows.Forms.TextBox();
             this.btnPretrazi = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTroskovi)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@
             // 
             // btnUnesiNovi
             // 
-            this.btnUnesiNovi.Location = new System.Drawing.Point(564, 430);
+            this.btnUnesiNovi.Location = new System.Drawing.Point(436, 425);
             this.btnUnesiNovi.Name = "btnUnesiNovi";
             this.btnUnesiNovi.Size = new System.Drawing.Size(122, 42);
             this.btnUnesiNovi.TabIndex = 1;
@@ -64,7 +65,7 @@
             // 
             // btnObrisi
             // 
-            this.btnObrisi.Location = new System.Drawing.Point(692, 430);
+            this.btnObrisi.Location = new System.Drawing.Point(564, 425);
             this.btnObrisi.Name = "btnObrisi";
             this.btnObrisi.Size = new System.Drawing.Size(122, 42);
             this.btnObrisi.TabIndex = 2;
@@ -98,12 +99,23 @@
             this.btnPretrazi.UseVisualStyleBackColor = true;
             this.btnPretrazi.Click += new System.EventHandler(this.btnPretrazi_Click_1);
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(692, 425);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(122, 42);
+            this.btnUpdate.TabIndex = 6;
+            this.btnUpdate.Text = "Promijeni podatke";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // FrmTroskovi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(941, 514);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnPretrazi);
             this.Controls.Add(this.txtPretrazivanje);
             this.Controls.Add(this.label1);
@@ -128,5 +140,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtPretrazivanje;
         private System.Windows.Forms.Button btnPretrazi;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }

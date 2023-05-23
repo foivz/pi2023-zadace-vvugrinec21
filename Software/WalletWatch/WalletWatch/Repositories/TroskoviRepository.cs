@@ -96,6 +96,16 @@ namespace WalletWatch.Repositories
             DB.CloseConnection();
         }
 
+        public static void UpdateTrosak(Trosak trosak)
+        {
+            string sql = $"UPDATE Troskovi SET iznos_troska = {trosak.Iznos}, opis = '{trosak.Opis}', datum_troska = '{trosak.DatumTroska.ToString("yyyy-MM-dd HH:mm:ss")}', ID_korisnice = 1, ID_naziva = {trosak.IdVrste} WHERE ID_troska = {trosak.Id}";
+
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+
+
 
     }
 }
