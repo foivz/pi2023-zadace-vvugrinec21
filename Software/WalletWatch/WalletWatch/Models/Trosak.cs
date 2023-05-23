@@ -14,13 +14,16 @@ namespace WalletWatch.Models
         public string Opis { get; set; }   
         public DateTime DatumTroska { get; set; }
         public string VrstaTroska { get; set; }
-        public Trosak(int id, int iznos, string opis, DateTime datumTroska, string vrstaTroska)
+        
+        public string Katgorije { get; set; }
+        public Trosak(int id, int iznos, string opis, DateTime datumTroska, string vrstaTroska, string katgorije)
         {
             Id = id;
             Iznos = iznos;
             Opis = opis;
             DatumTroska = datumTroska;
             VrstaTroska = vrstaTroska;
+            Katgorije = katgorije;
         }
     }
 }

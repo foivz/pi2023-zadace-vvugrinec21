@@ -32,7 +32,7 @@ namespace WalletWatch.Repositories
         {
             List<Trosak> troskovi = new List<Trosak>();
 
-            string sql = $"SELECT * FROM Troskovi,VrsteTroskova WHERE VrsteTroskova.ID_naziva = Troskovi.ID_naziva";
+            string sql = $"SELECT * FROM Troskovi JOIN VrsteTroskova ON VrsteTroskova.ID_naziva = Troskovi.ID_naziva JOIN Kategorije ON VrsteTroskova.ID_kategorije = Kategorije.ID_kategorije";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             while (reader.Read())
@@ -52,9 +52,10 @@ namespace WalletWatch.Repositories
             int iznos = int.Parse(reader["iznos_troska"].ToString());
             string opis = reader["opis"].ToString();
             DateTime datumTroska = DateTime.Parse(reader["datum_troska"].ToString());
-            string VrstaTroska = reader["naziv_vrste"].ToString() ;
+            string VrstaTroska = reader["naziv_vrste"].ToString();
+            string Kategorije = reader["naziv_kategorije"].ToString();
 
-            Trosak trosak = new Trosak(id,iznos,opis,datumTroska,VrstaTroska);
+            Trosak trosak = new Trosak(id,iznos,opis,datumTroska,VrstaTroska,Kategorije);
 
             return trosak;
         }   

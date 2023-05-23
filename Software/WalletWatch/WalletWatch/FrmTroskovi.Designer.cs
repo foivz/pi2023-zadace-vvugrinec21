@@ -37,10 +37,12 @@
             this.dgvTroskovi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvTroskovi.BackgroundColor = System.Drawing.Color.White;
             this.dgvTroskovi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTroskovi.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvTroskovi.Location = new System.Drawing.Point(21, 24);
             this.dgvTroskovi.Name = "dgvTroskovi";
-            this.dgvTroskovi.Size = new System.Drawing.Size(513, 381);
+            this.dgvTroskovi.Size = new System.Drawing.Size(558, 381);
             this.dgvTroskovi.TabIndex = 0;
             // 
             // FrmTroskovi
