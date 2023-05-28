@@ -1,6 +1,6 @@
 ﻿namespace WalletWatch
 {
-    partial class FrmTroskovi
+    partial class FrmExpenses
     {
         /// <summary>
         /// Required designer variable.
@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvTroskovi = new System.Windows.Forms.DataGridView();
+            this.dgvExpenses = new System.Windows.Forms.DataGridView();
             this.btnUnesiNovi = new System.Windows.Forms.Button();
             this.btnObrisi = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPretrazivanje = new System.Windows.Forms.TextBox();
             this.btnPretrazi = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTroskovi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvExpenses)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvTroskovi
+            // dgvExpenses
             // 
-            this.dgvTroskovi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvExpenses.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvTroskovi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvTroskovi.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvTroskovi.BackgroundColor = System.Drawing.Color.White;
-            this.dgvTroskovi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTroskovi.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.dgvTroskovi.Location = new System.Drawing.Point(21, 24);
-            this.dgvTroskovi.Name = "dgvTroskovi";
-            this.dgvTroskovi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTroskovi.Size = new System.Drawing.Size(793, 381);
-            this.dgvTroskovi.TabIndex = 0;
+            this.dgvExpenses.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvExpenses.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvExpenses.BackgroundColor = System.Drawing.Color.White;
+            this.dgvExpenses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvExpenses.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.dgvExpenses.Location = new System.Drawing.Point(21, 24);
+            this.dgvExpenses.Name = "dgvExpenses";
+            this.dgvExpenses.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvExpenses.Size = new System.Drawing.Size(793, 381);
+            this.dgvExpenses.TabIndex = 0;
             // 
             // btnUnesiNovi
             // 
@@ -60,7 +60,7 @@
             this.btnUnesiNovi.Name = "btnUnesiNovi";
             this.btnUnesiNovi.Size = new System.Drawing.Size(122, 42);
             this.btnUnesiNovi.TabIndex = 1;
-            this.btnUnesiNovi.Text = "Unesi novi trosak";
+            this.btnUnesiNovi.Text = "Unesi novi trošak";
             this.btnUnesiNovi.UseVisualStyleBackColor = true;
             this.btnUnesiNovi.Click += new System.EventHandler(this.btnUnesiNovi_Click);
             // 
@@ -70,7 +70,7 @@
             this.btnObrisi.Name = "btnObrisi";
             this.btnObrisi.Size = new System.Drawing.Size(122, 42);
             this.btnObrisi.TabIndex = 2;
-            this.btnObrisi.Text = "Obrisi trosak";
+            this.btnObrisi.Text = "Obrisi trošak";
             this.btnObrisi.UseVisualStyleBackColor = true;
             this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
@@ -110,7 +110,7 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // FrmTroskovi
+            // FrmExpenses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -122,12 +122,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.btnUnesiNovi);
-            this.Controls.Add(this.dgvTroskovi);
-            this.Name = "FrmTroskovi";
+            this.Controls.Add(this.dgvExpenses);
+            this.Name = "FrmExpenses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "WalletWatch";
-            this.Load += new System.EventHandler(this.FrmTroskovi_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTroskovi)).EndInit();
+            this.Text = "FrmTroskovi";
+            this.Load += new System.EventHandler(this.FrmExpenses_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvExpenses)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,7 +135,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvTroskovi;
+        private System.Windows.Forms.DataGridView dgvExpenses;
         private System.Windows.Forms.Button btnUnesiNovi;
         private System.Windows.Forms.Button btnObrisi;
         private System.Windows.Forms.Label label1;

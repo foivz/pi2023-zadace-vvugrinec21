@@ -1,6 +1,6 @@
 ﻿namespace WalletWatch
 {
-    partial class FrmUnosTroska
+    partial class FrmExpensesInput
     {
         /// <summary>
         /// Required designer variable.
@@ -49,7 +49,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Opis troska";
+            this.label1.Text = "Description troska";
             // 
             // label2
             // 
@@ -58,7 +58,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Iznos:";
+            this.label2.Text = "Value:";
             // 
             // label3
             // 
@@ -166,7 +166,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmUnosTroska";
-            this.Text = "Unos novog troška";
+            this.Text = "FrmUnosTroska";
             this.Load += new System.EventHandler(this.FrmUnosTroska_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

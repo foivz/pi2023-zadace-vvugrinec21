@@ -166,7 +166,7 @@
             this.Controls.Add(this.txtDescUpdate);
             this.Controls.Add(this.lblOpis);
             this.Name = "FrmUpdateData";
-            this.Text = "FrmUpdateData";
+            this.Text = "Promjena podataka o trošku";
             this.Load += new System.EventHandler(this.FrmUpdateData_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

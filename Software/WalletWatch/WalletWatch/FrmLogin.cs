@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WalletWatch.Repositories;
 
 namespace WalletWatch
 {
     public partial class FrmLogin : Form
     {
 
-        string password = "lozinka";
+        string password = KorisnicaRepository.GetPassword();
         public FrmLogin()
         {
             InitializeComponent();
@@ -33,7 +34,7 @@ namespace WalletWatch
             }
             else
             {
-                MessageBox.Show("Korisničko lozinka je kriva", "Problem", MessageBoxButtons.OK,
+                MessageBox.Show("Korisnička lozinka je kriva", "Problem", MessageBoxButtons.OK,
                 MessageBoxIcon.Error);
             }
 
