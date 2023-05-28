@@ -69,5 +69,20 @@ namespace WalletWatch
   
             Close();
         }
+
+        private void cboSelection_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboSelection.SelectedValue != null)
+            {
+                if (int.TryParse(cboSelection.SelectedValue.ToString(), out int id))
+                {
+                    string categoryName = CategoryRepository.GetCategoryName(id);
+                    if (!string.IsNullOrEmpty(categoryName))
+                    {
+                        txtCategoryBox.Text = categoryName;
+                    }
+                }
+            }
+        }
     }
 }

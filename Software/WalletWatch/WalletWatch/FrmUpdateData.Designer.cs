@@ -38,6 +38,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtCategoryBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblOpis
@@ -47,7 +49,7 @@
             this.lblOpis.Name = "lblOpis";
             this.lblOpis.Size = new System.Drawing.Size(66, 13);
             this.lblOpis.TabIndex = 0;
-            this.lblOpis.Text = "Opis troska: ";
+            this.lblOpis.Text = "Opis troška: ";
             // 
             // txtDescUpdate
             // 
@@ -71,6 +73,7 @@
             this.cboSelection.Name = "cboSelection";
             this.cboSelection.Size = new System.Drawing.Size(177, 21);
             this.cboSelection.TabIndex = 6;
+            this.cboSelection.SelectedIndexChanged += new System.EventHandler(this.cboSelection_SelectedIndexChanged);
             // 
             // datDateUpdate
             // 
@@ -114,7 +117,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 13);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Vrsta troska:";
+            this.label3.Text = "Vrsta troška:";
             // 
             // label5
             // 
@@ -126,12 +129,32 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "Izmjena podataka";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(509, 84);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(237, 13);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Odabrana vrsta troška se nalazi pod kategorijom:";
+            // 
+            // txtCategoryBox
+            // 
+            this.txtCategoryBox.Enabled = false;
+            this.txtCategoryBox.Location = new System.Drawing.Point(512, 100);
+            this.txtCategoryBox.Name = "txtCategoryBox";
+            this.txtCategoryBox.ReadOnly = true;
+            this.txtCategoryBox.Size = new System.Drawing.Size(234, 20);
+            this.txtCategoryBox.TabIndex = 15;
+            // 
             // FrmUpdateData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtCategoryBox);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -162,5 +185,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtCategoryBox;
     }
 }

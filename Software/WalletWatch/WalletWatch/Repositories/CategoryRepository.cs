@@ -12,33 +12,25 @@ namespace WalletWatch.Repositories
     public static class CategoryRepository
     {
 
-        public static string GetCategoryName()
+        public static string GetCategoryName(int id)
         {
-            string nazivKategorije = string.Empty;
+            string categoryName = null;
+            string sql = $"SELECT Kategorije.naziv_kategorije FROM VrsteTroskova " +
+                         $"JOIN Kategorije ON VrsteTroskova.ID_kategorije = Kategorije.ID_kategorije " +
+                         $"WHERE VrsteTroskova.ID_naziva = {id}";
 
-            string sql = "SELECT naziv_kategorije FROM Kategorije,VrsteTroskova WHERE Kategorije.ID_kategorije = VrsteTroskova.ID_kategorije";
             DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            if (reader.HasRows)
             {
-                var reader = DB.GetDataReader(sql);
-                while (reader.Read())
-                {
-                    Category category = CreateObject(reader);
-                    if (category != null)
-                    {
-                        nazivKategorije = category.ToString();
-                    }
-                }
+                reader.Read();
+                categoryName = reader["naziv_kategorije"].ToString();
             }
+            reader.Close();
+            DB.CloseConnection();
 
-            return nazivKategorije;
+            return categoryName;
         }
 
-        private static Category CreateObject(SqlDataReader reader)
-        {
-            string kategorije = reader["naziv_kategorije"].ToString();
-            Category category= new Category(kategorije);
-
-            return category;
-        }
     }
 }

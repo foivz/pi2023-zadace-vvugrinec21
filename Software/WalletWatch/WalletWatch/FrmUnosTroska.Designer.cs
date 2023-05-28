@@ -38,6 +38,8 @@
             this.dtpDatumTroska = new System.Windows.Forms.DateTimePicker();
             this.cboVrste = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCategoryShow = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -127,12 +129,32 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Unos podataka";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(540, 74);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(237, 13);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Odabrana vrsta troška se nalazi pod kategorijom:";
+            // 
+            // txtCategoryShow
+            // 
+            this.txtCategoryShow.Enabled = false;
+            this.txtCategoryShow.Location = new System.Drawing.Point(543, 93);
+            this.txtCategoryShow.Name = "txtCategoryShow";
+            this.txtCategoryShow.ReadOnly = true;
+            this.txtCategoryShow.Size = new System.Drawing.Size(234, 20);
+            this.txtCategoryShow.TabIndex = 14;
+            // 
             // FrmUnosTroska
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtCategoryShow);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dtpDatumTroska);
             this.Controls.Add(this.btnUnos);
@@ -163,5 +185,7 @@
         private System.Windows.Forms.DateTimePicker dtpDatumTroska;
         private System.Windows.Forms.ComboBox cboVrste;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtCategoryShow;
     }
 }

@@ -45,15 +45,26 @@ namespace WalletWatch
             cboVrste.DataSource = new BindingSource(vrsteDictionary, null);
             cboVrste.DisplayMember = "Value";
             cboVrste.ValueMember = "Key";
-
+            
         }
 
         private void cboVrste_SelectedIndexChanged(object sender, EventArgs e)
         {
             // int idNaziva = Convert.ToInt32(cboVrste.SelectedValue);
 
-            
-         
+            if (cboVrste.SelectedValue != null)
+            {
+                if (int.TryParse(cboVrste.SelectedValue.ToString(), out int id))
+                {
+                    string categoryName = CategoryRepository.GetCategoryName(id);
+                    if (!string.IsNullOrEmpty(categoryName))
+                    {
+                        txtCategoryShow.Text = categoryName;
+                    }
+                }
+            }
+
+
         }
 
     }
