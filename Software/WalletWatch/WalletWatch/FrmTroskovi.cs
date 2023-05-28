@@ -64,37 +64,9 @@ namespace WalletWatch
         }
         private void btnPretrazi_Click_1(object sender, EventArgs e)
         {
-            string kljucnaRijec = txtPretrazivanje.Text;
-            PretraziTroskove(kljucnaRijec);
-        }
-
-        private void PretraziTroskove(string kljucnaRijec)
-        {
-            int trenutnaPozicija = dgvTroskovi.CurrentRow?.Index ?? -1;
-
-            //spremanje trenutne pozicije
-
-            List<Trosak> troskovi = TroskoviRepository.GetTroskovi();
-
-            List<Trosak> filtriraniTroskovi = troskovi.Where(trosak =>
-                trosak.Iznos.ToString().IndexOf(kljucnaRijec, StringComparison.OrdinalIgnoreCase) >= 0 ||
-                trosak.Opis.IndexOf(kljucnaRijec, StringComparison.OrdinalIgnoreCase) >= 0 ||
-                trosak.DatumTroska.ToString().IndexOf(kljucnaRijec, StringComparison.OrdinalIgnoreCase) >= 0 ||
-                trosak.Katgorije.IndexOf(kljucnaRijec, StringComparison.OrdinalIgnoreCase) >= 0 ||
-                trosak.VrstaTroska.IndexOf(kljucnaRijec, StringComparison.OrdinalIgnoreCase) >= 0 ||
-                trosak.Id.ToString().IndexOf(kljucnaRijec, StringComparison.OrdinalIgnoreCase) >= 0 ||
-                trosak.IdVrste.ToString().IndexOf(kljucnaRijec, StringComparison.OrdinalIgnoreCase) >= 0 
-
-
-
-            ).ToList();
-
-            dgvTroskovi.DataSource = filtriraniTroskovi;
-
-            if (trenutnaPozicija >= 0 && trenutnaPozicija < dgvTroskovi.Rows.Count)
-            {
-                dgvTroskovi.Rows[trenutnaPozicija].Selected = true;
-            }
+            string keyword = txtPretrazivanje.Text;
+            List<Trosak> results = TroskoviRepository.GetExpenses(keyword);
+            dgvTroskovi.DataSource = results;
         }
         
         private void btnUpdate_Click(object sender, EventArgs e)

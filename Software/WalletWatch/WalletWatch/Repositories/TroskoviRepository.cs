@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using WalletWatch.Models;
 
 namespace WalletWatch.Repositories
@@ -45,6 +46,37 @@ namespace WalletWatch.Repositories
 
             return troskovi;
         }
+        public static List<Trosak> GetExpenses(string keyword)
+        {
+            string sql = $"SELECT * FROM Troskovi " +
+                         $"JOIN VrsteTroskova ON VrsteTroskova.ID_naziva = Troskovi.ID_naziva " +
+                         $"JOIN Kategorije ON VrsteTroskova.ID_kategorije = Kategorije.ID_kategorije " +
+                         $"WHERE Troskovi.iznos_troska LIKE '%{keyword}%' OR " +
+                         $"Troskovi.opis LIKE '%{keyword}%' OR " +
+                         $"Troskovi.datum_troska LIKE '%{keyword}%' OR " +
+                         $"Troskovi.ID_troska LIKE '%{keyword}%' OR " +
+                         $"VrsteTroskova.ID_naziva LIKE '%{keyword}%' OR " +
+                         $"VrsteTroskova.naziv_vrste LIKE '%{keyword}%' OR " +
+                         $"Kategorije.ID_kategorije LIKE '%{keyword}%' OR " +
+                         $"Kategorije.naziv_kategorije LIKE '%{keyword}%'";
+
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            List<Trosak> troskovi = new List<Trosak>();
+
+            while (reader.Read())
+            {
+                Trosak trosak = CreateObject(reader);
+                troskovi.Add(trosak);
+            }
+
+            reader.Close();
+            DB.CloseConnection();
+
+            return troskovi;
+        }
+
+
         private static Trosak CreateObject(SqlDataReader reader)
         {
 

@@ -12,9 +12,6 @@ namespace WalletWatch.Repositories
     public static class CategoryRepository
     {
 
-
-
-
         public static string GetCategoryName()
         {
             string nazivKategorije = string.Empty;
