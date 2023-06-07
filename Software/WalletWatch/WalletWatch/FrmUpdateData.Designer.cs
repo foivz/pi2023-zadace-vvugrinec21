@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUpdateData));
             this.lblOpis = new System.Windows.Forms.Label();
             this.txtDescUpdate = new System.Windows.Forms.TextBox();
             this.txtValueUpdate = new System.Windows.Forms.TextBox();
@@ -165,6 +166,7 @@
             this.Controls.Add(this.txtValueUpdate);
             this.Controls.Add(this.txtDescUpdate);
             this.Controls.Add(this.lblOpis);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmUpdateData";
             this.Text = "Promjena podataka o trošku";
             this.Load += new System.EventHandler(this.FrmUpdateData_Load);

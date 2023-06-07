@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTroskovi));
             this.dgvTroskovi = new System.Windows.Forms.DataGridView();
             this.btnUnesiNovi = new System.Windows.Forms.Button();
             this.btnObrisi = new System.Windows.Forms.Button();
@@ -123,6 +124,7 @@
             this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.btnUnesiNovi);
             this.Controls.Add(this.dgvTroskovi);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmTroskovi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WalletWatch";
