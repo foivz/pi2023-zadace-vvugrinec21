@@ -2,9 +2,9 @@
 
 ## Podaci o studentu
 
-Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
-------------  | ------------------- | ----- | ---------------------
-Vili Vugrinec | vvugrinec21@student.foi.hr | 0016152964 | vvugrinec21
+Ime i prezime | E-mail adresa (FOI) | Github korisničko ime
+------------  | ------------------- |  ---------------------
+Vili Vugrinec | vvugrinec21@student.foi.hr | vvugrinec21
 
 
 ## Opis domene
